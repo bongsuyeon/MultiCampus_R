@@ -1,6 +1,6 @@
-#install.packages('rvest')
-#install.packages('XML')
-#install.packages('httr')
+install.packages('rvest')
+install.packages('XML')
+install.packages('httr')
 
 library(rvest)
 library(XML)
@@ -49,7 +49,7 @@ new_text[[length(new_text)+1]] <- c(oli)
 
 
 #(Find) table
-new_text[[length(new_text)+1]] <-c(html_text(html_nodes(text,"table  *")))
+new_text[[length(new_text)+1]] <-c(html_text(html_nodes(text,"table *")))
 
 
 #(Find) table class

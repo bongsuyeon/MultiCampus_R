@@ -1,0 +1,8 @@
+# 한국어 불용어
+# https://www.rdocumentation.org/packages/stopwords/versions/2.2
+
+install.packages("stopwords")
+
+stopwords::stopwords_getsources()
+stopwords::stopwords_getlanguages("marimo")
+head(stopwords::stopwords("ko", source = "marimo"), 100)
